@@ -18,7 +18,7 @@ Result:
 
 在网站markdown中生成bangumi名片的简易mjs
 
-## Sample usage
+## 使用事例
 
 markdown:
 
