@@ -7,7 +7,7 @@ script that allows you to add a bangumi user card to your website's markdown
 Script call in markdown:
 
 ```markdown
-:bangumi{user="harryhaller"}
+::bangumi{user="harryhaller"}
 ```
 
 Result:
@@ -23,7 +23,7 @@ Result:
 markdown:
 
 ```markdown
-:bangumi{user="harryhaller"}
+::bangumi{user="harryhaller"}
 ```
 
 效果:
