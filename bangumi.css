@@ -1,0 +1,145 @@
+/* src/styles/bangumi.css */
+
+/* Container for the Bangumi Card */
+.card-bangumi {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  padding: 16px;
+  border: 1px solid #e2e2e2;
+  border-radius: 8px;
+  background-color: #eee;
+  transition: box-shadow 0.3s;
+  max-width: 600px; /* Adjust as needed */
+  margin: 16px 0; /* Spacing around the card */
+  text-decoration: none; /* Remove underline from link */
+  color: inherit; /* Inherit text color */
+}
+
+.card-bangumi:hover {
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+/* Left Side: Avatar and User Details */
+.bc-user-card {
+  display: flex;
+  align-items: center;
+  flex: 1; /* Take up remaining space */
+  text-decoration: none;
+}
+
+/* Avatar Styling */
+.bc-avatar {
+  width: 80px; /* Increased size */
+  height: 80px; /* Increased size */
+  background-size: cover;
+  background-position: center;
+  border-radius: 50%;
+  margin-right: 16px;
+  flex-shrink: 0;
+  background-color: #f0f0f0; /* Placeholder color while loading */
+}
+
+/* User Details Container */
+.bc-user-details {
+  display: flex;
+  flex-direction: column;
+  gap: 4px; /* Spacing between details */
+  text-decoration: none;
+}
+
+/* Name Container: Nickname and Username */
+.bc-name-container {
+  display: flex;
+  align-items: baseline;
+  gap: 8px; /* Space between nickname and username */
+  text-decoration: none;
+}
+
+/* Nickname Styling */
+.bc-nickname {
+  font-size: 1.2em;
+  font-weight: bold;
+  color: #333;
+  text-decoration: none;
+}
+
+/* Username Styling */
+.bc-username {
+  font-size: 0.9em; /* Slightly smaller */
+  color: #777; /* Dimmer color */
+  text-decoration: none;
+}
+
+/* Bio (Sign) Styling */
+.bc-sign {
+  font-style: italic;
+  color: #666;
+  text-decoration: none;
+}
+
+/* Right Side: Additional Information */
+.bc-additional-info {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 8px; /* Spacing between items */
+  margin-left: 24px; /* Space between left and right sections */
+  text-decoration: none;
+}
+
+/* User Group Styling */
+.bc-usergroup {
+  font-size: 0.9em;
+  color: #777;
+  text-decoration: none;
+}
+
+/* User ID Styling */
+.bc-userid {
+  font-size: 0.9em;
+  color: #777;
+  text-decoration: none;
+}
+
+/* Error State Styling */
+.card-bangumi.fetch-error {
+  border-color: #ff4d4f;
+  background-color: #fff1f0;
+}
+
+/* Loading State Styling */
+.card-bangumi.fetch-waiting {
+  opacity: 0.7;
+  /* Optionally, add a loading spinner or animation here */
+}
+
+/* Responsive Adjustments */
+@media (max-width: 600px) {
+  .card-bangumi {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .bc-user-card {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .bc-additional-info {
+    margin-left: 0;
+    margin-top: 16px;
+    align-items: center;
+  }
+
+  .bc-name-container {
+    flex-direction: column;
+    align-items: center;
+    gap: 4px;
+  }
+
+  .bc-username {
+    font-size: 0.85em;
+  }
+}
