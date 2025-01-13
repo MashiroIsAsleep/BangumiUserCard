@@ -1,6 +1,8 @@
 # BangumiUserCard
 
-script that allows you to add a bangumi user card to your website's markdown
+Script that allows you to add a bangumi user card to your website's markdown.
+
+Displays basic information. Redirects to Bangumi user page on click.
 
 ## Sample usage
 
@@ -17,6 +19,8 @@ Result:
 # Bangumi名片
 
 在网站markdown中生成bangumi名片的简易mjs
+
+点击跳转至bangumi用户主页。
 
 ## 使用范例
 
