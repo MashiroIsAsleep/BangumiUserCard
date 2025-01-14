@@ -131,7 +131,7 @@ export function BangumiCardComponent(properties, children) {
               nicknameEl.innerText = nickname;
             }
 
-\            var usernameEl = document.getElementById('${cardUuid}-username');
+            var usernameEl = document.getElementById('${cardUuid}-username');
             if (usernameEl) {
               usernameEl.innerText = '@' + data.username;
             }
